@@ -482,3 +482,7 @@ modal-body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
   }
 }
+
+section#contact .section-heading {
+    color: #fff;
+}
