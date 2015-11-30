@@ -573,3 +573,11 @@ section#contact .form-control:focus {
   text-align: left;
   font-size: 1em;
 }
+
+td {
+  border:0;
+}
+
+span {
+  width:33px;
+}
