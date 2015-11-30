@@ -66,7 +66,7 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 aside {
@@ -503,3 +503,27 @@ section#contact .form-group textarea.form-control {
 section#contact .form-control:focus {
     border-color: #1F92FF;
     box-shadow: none;
+}
+
+.qualifies {
+    margin-bottom: 50px;
+    text-align: center;
+    padding:15px;
+}
+
+
+.qualifies h4 {
+    font-weight: 700;
+    text-transform: uppercase!important;
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.qualifies p {
+    margin-top: 0;
+}
+.qualifies img{
+    margin: 0 auto;
+    border: 7px solid #CACACA;
+}
