@@ -276,7 +276,7 @@ header .header-content .header-content-inner p {
   text-align: center;
   color: #fff;
   opacity: 0;
-  background: rgba(240,95,64,.9);
+  background: rgba(64,178,240,.9); /*this is the portfolio color*/
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -350,7 +350,7 @@ header .header-content .header-content-inner p {
 .open > .dropdown-toggle.btn-default {
   border-color: #ededed;
   color: #222;
-  background-color: #f2f2f2;
+  background-color: #40B2F0;
 }
 
 .btn-default:active,
@@ -403,8 +403,8 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
   border-color: #ed431f;
   color: #fff;
-  background-color: #ee4b28;
-}
+  background-color: #40B2F0; /*color hover for button*/
+ }
 
 .btn-primary:active,
 .btn-primary.active,
@@ -484,46 +484,63 @@ modal-body {
 }
 
 section#contact .form-group {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+  padding: 20px;
 }
 
 section#contact .form-group input.form-control {
-    height: auto;
+  height: auto;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+  height: 236px;
 }
 
 section#contact .form-control:focus {
-    border-color: #1F92FF;
-    box-shadow: none;
+  border-color: #1F92FF;
+  box-shadow: none;
 }
 
 .qualifies {
-    margin-bottom: 50px;
-    text-align: center;
-    padding:15px;
+  margin-bottom: 50px;
+  padding:20px;
 }
 
 
-.qualifies h4 {
-    font-weight: 700;
-    text-transform: uppercase!important;
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
+.qualifies h2 {
+  font-weight: 700;
+  text-transform: uppercase!important;
+  text-align: center!important;
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-size:22px;
+}
+
+.qualifies h3 {
+  font-size: 20px;
+  margin-bottom:3px;
+  line-height:1.5;
+    text-transform: uppercase;
+}
+
+.qualifies h5 {
+  font-size: 16px;
+  margin-bottom:3px;
+  line-height:1.5;
+
 }
 
 .qualifies p {
-    margin-top: 0;
+  margin-top: 0;
+  text-align: center;
 }
+
 .qualifies img{
-    margin: 0 auto;
-    border: 7px solid #CACACA;
+  margin: 0 auto;
+  border: 7px solid #CACACA;
 }
