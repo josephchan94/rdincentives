@@ -528,12 +528,18 @@ section#contact .form-control:focus {
   font-size:22px;
 }
 
-.qualifies h3 {
+.qualifies h3, h4 {
   font-size: 20px;
   margin-bottom:3px;
   line-height:1.5;
   text-transform: uppercase;
   color:black;
+
+}
+
+.qualifiespop h4 {
+  font-size: 18px;
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
 }
 
 .qualifies h5 {
@@ -546,6 +552,10 @@ section#contact .form-control:focus {
 .qualifies p {
   margin-top: 0;
   text-align: center;
+}
+
+.qualifiespop p {
+  margin-top: 0;
 }
 
 .qualifies img{
