@@ -55,10 +55,16 @@ p {
   background-color: #2B3033;
 }
 
+.bg-secondary {
+  background-color: #fff;
+}
+
 .bg-dark {
   color: #fff;
   background-color: #222;
 }
+
+
 
 .text-faded {
   color: rgba(255,255,255,.7);
@@ -404,7 +410,7 @@ fieldset[disabled] .btn-default.active {
   border-color: #ed431f;
   color: #fff;
   background-color: #40B2F0; /*color hover for button*/
- }
+}
 
 .btn-primary:active,
 .btn-primary.active,
@@ -525,14 +531,15 @@ section#contact .form-control:focus {
   font-size: 20px;
   margin-bottom:3px;
   line-height:1.5;
-    text-transform: uppercase;
+  text-transform: uppercase;
+  color:black;
 }
 
 .qualifies h5 {
   font-size: 16px;
   margin-bottom:3px;
   line-height:1.5;
-
+  color:black;
 }
 
 .qualifies p {
@@ -543,4 +550,14 @@ section#contact .form-control:focus {
 .qualifies img{
   margin: 0 auto;
   border: 7px solid #CACACA;
+}
+
+.approach h1 {
+  text-align: left;
+  font-size: 20px!important;
+}
+
+.approach p {
+  text-align: left;
+  font-size: 12px;
 }
