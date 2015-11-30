@@ -392,9 +392,9 @@
           <!-- <p class="text-primary"></p> -->
           <div ng-app="CalculatorApp" ng-controller="CalculatorController">
             <div class="row">
-              <p>Employee Count<input type="number" ng-model="a"></p>
-              <p>Annual Wage/Payroll Size:<input type="number" ng-model="b"></p>
-              <p>Annual Revenue:<input type="number" ng-model="c"></p>
+              <p>Employee Count: <input type="number" ng-model="a"></p>
+              <p>Annual Wage/Payroll Size: <input type="number" ng-model="b"></p>
+              <p>Annual Revenue: <input type="number" ng-model="c"></p>
               <p>
                 <select ng-model="operator">
                   <option>+</option>
@@ -403,7 +403,8 @@
                   <option>/</option>
                 </select>
               </p>
-              <p></p>
+              <p>{{ result() }}</p>
+              <br>
             </div>
           </div>
         </div>
