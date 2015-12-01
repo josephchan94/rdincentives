@@ -578,6 +578,10 @@ td {
   border:0;
 }
 
+th {
+  padding-right:10px;
+}
+
 span {
   width:33px;
 }
