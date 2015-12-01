@@ -262,7 +262,7 @@ header .header-content .header-content-inner p {
   max-width: 650px;
 }
 
-.portfolio-box .portfolio-box-caption {
+.portfolio-box .portfolio-box-caption{
   display: block;
   position: absolute;
   bottom: 0;
@@ -518,6 +518,10 @@ section#contact .form-control:focus {
   color:white;
 }
 
+.qualifiesbtn:hover {
+  color:#fff;
+}
+
 .qualifies h3, h4 {
   font-size: 20px;
   margin-bottom:3px;
@@ -596,5 +600,5 @@ span {
 
 .hideme
 {
-    opacity:0.3;
+    opacity:0.2;
 }
