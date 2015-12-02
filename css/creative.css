@@ -611,11 +611,8 @@ span {
 
 .progress-bar {
   background-color:#F0A340!important;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
 }
 
 /* carousel */
