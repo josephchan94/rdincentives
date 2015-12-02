@@ -1,10 +1,7 @@
-$('input').on('click', function(){
-  var valeur = 0;
-  $('input:checked').each(function(){
-       if ( $(this).attr('value') > valeur )
-       {
-           valeur =  $(this).attr('value');
-       }
+var bar = $('.progress-bar');
+$(function(){
+  $(bar).each(function(){
+    bar_width = $(this).attr('aria-valuenow');
+    $(this).width(bar_width + '%');
   });
-  $('.progress-bar').css('width', valeur+'%').attr('aria-valuenow', valeur);
 });
