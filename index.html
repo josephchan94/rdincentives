@@ -446,122 +446,124 @@
             <div class="approach">
               <h2 class="section-heading">Our Approach</h2>
               <hr class="light">
-              <div class="progress progress-striped active">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
+              <div id="progressbar"></div>
+
+              <p id="plus">+</p>
+              <p id="minus">-</p>
+
+              <p id="progressLabel"></p>
+            </div>
+          </div>
 
 
-                <div class="container">
-                  <div class="row">
-                  </div>
-                  <div class='row'>
-                    <div class='col-md-8'>
-                      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                        <!-- Bottom Carousel Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#quote-carousel" data-slide-to="0" class="active" id="prog1"></li>
-                          <li data-target="#quote-carousel" data-slide-to="1" id="prog2" ></li>
-                          <li data-target="#quote-carousel" data-slide-to="2" id="prog3"></li>
-                          <li data-target="#quote-carousel" data-slide-to="3" id="prog4"></li>
-                          <li data-target="#quote-carousel" data-slide-to="4" id="prog5"></li>
-                          <li data-target="#quote-carousel" data-slide-to="5" id="prog2"></li>
-                        </ol>
+          <div class="container">
+            <div class="row">
+            </div>
+            <div class='row'>
+              <div class='col-md-8'>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel" data-interval="2500">
 
-                        <!-- Carousel Slides / Quotes -->
-                        <div class="carousel-inner">
+                  <!-- Bottom Carousel Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#quote-carousel" data-slide-to="1" ></li>
+                    <li data-target="#quote-carousel" data-slide-to="2" ></li>
+                    <li data-target="#quote-carousel" data-slide-to="3" ></li>
+                    <li data-target="#quote-carousel" data-slide-to="4" ></li>
+                    <li data-target="#quote-carousel" data-slide-to="5" ></li>
+                  </ol>
 
-                          <!-- Quote 1 -->
-                          <div class="item active">
-                            <input type="checkbox" value="10">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
-                                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
-                                </div>
-                                <div class="col-sm-9">
-                                  <h3>First Meeting</h3>
-                                  <p>In this initial meeting your account executive will gather basic facts about your company and discuss the process.</p>
-                                </div>
-                              </div>
-                            </blockquote>
+
+                  <!-- Carousel Slides / Quotes -->
+                  <div class="carousel-inner">
+
+                    <!-- Quote 1 -->
+                    <div class="item active">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                            <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
                           </div>
-                          <!-- Quote 2 -->
-                          <div class="item" id="prog2">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
-                                </div>
-                                <div class="col-sm-9">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
-                                  <small>Someone famous</small>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <!-- Quote 3 -->
-                          <div class="item" id="prog3">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
-                                </div>
-                                <div class="col-sm-9">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-                                  <small>Someone famous</small>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <div class="item" id="prog4">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
-                                </div>
-                                <div class="col-sm-9">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-                                  <small>Someone famous</small>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <div class="item" id="prog5">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
-                                </div>
-                                <div class="col-sm-9">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-                                  <small>Someone famous</small>
-                                </div>
-                              </div>
-                            </blockquote>
-                          </div>
-                          <div class="item" id="prog6">
-                            <blockquote>
-                              <div class="row">
-                                <div class="col-sm-3 text-center">
-                                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
-                                </div>
-                                <div class="col-sm-9">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
-                                  <small>Someone famous</small>
-                                </div>
-                              </div>
-                            </blockquote>
+                          <div class="col-sm-9">
+                            <h3>First Meeting</h3>
+                            <p>In this initial meeting your account executive will gather basic facts about your company and discuss the process.</p>
                           </div>
                         </div>
-
-                        <!-- Carousel Buttons Next/Prev -->
-                        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i style="color:white" class="fa fa-chevron-left"></i></a>
-                        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i style="color:white" class="fa fa-chevron-right"></i></a>
-                      </div>
+                      </blockquote>
+                    </div>
+                    <!-- Quote 2 -->
+                    <div class="item" id="prog2">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                          </div>
+                          <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                            <small>Someone famous</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- Quote 3 -->
+                    <div class="item" id="prog3">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                          </div>
+                          <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                            <small>Someone famous</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="item" id="prog4">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                          </div>
+                          <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                            <small>Someone famous</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="item" id="prog5">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                          </div>
+                          <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                            <small>Someone famous</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="item" id="prog6">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-3 text-center">
+                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                          </div>
+                          <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                            <small>Someone famous</small>
+                          </div>
+                        </div>
+                      </blockquote>
                     </div>
                   </div>
+
+                  <!-- Carousel Buttons Next/Prev -->
+                  <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i style="color:white" class="fa fa-chevron-left"></i></a>
+                  <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i style="color:white" class="fa fa-chevron-right"></i></a>
                 </div>
               </div>
             </div>
@@ -569,138 +571,141 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="bg-secondary" id="calc">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center hideme">
-          <h2 class="section-heading">Calculate Your Savings!</h2>
-          <hr>
-          <br>
-          <!-- <p class="text-primary"></p> -->
-          <div ng-app="CalculatorApp" ng-controller="CalculatorController">
-            <div class="col-lg-8 col-lg-offset-2 text-center hideme">
-              <div class="row">
+  </div>
+</div>
+</div>
+</section>
+<section class="bg-secondary" id="calc">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center hideme">
+        <h2 class="section-heading">Calculate Your Savings!</h2>
+        <hr>
+        <br>
+        <!-- <p class="text-primary"></p> -->
+        <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+          <div class="col-lg-8 col-lg-offset-2 text-center hideme">
+            <div class="row">
 
-                <table style="width:100%">
-                  <tr>
-                    <th style="text-align:right!important">Industry
-                    </th>
-                    <th>
-                      <select name="industry" id="industry"><br />
-                        <option value="none">Select One</option><br />
-                        <option value="Aerospace">Aerospace</option><br />
-                        <option value="Agricultural">Agricultural</option><br />
-                        <option value="Apparel">Apparel</option><br />
-                        <option value="Architecture">Architecture</option><br />
-                        <option value="ArmsandDefense">Arms and Defense</option><br />
-                        <option value="Automotive">Automotive</option><br />
-                        <option value="BiotechnologyLifeScience">Biotechnology / Life Science</option><br />
-                        <option value="Brewing">Brewing</option><br />
-                        <option value="Chemicals">Chemicals</option><br />
-                        <option value="Construction">Construction</option><br />
-                        <option value="ConsumerProducts">Consumer Products</option><br />
-                        <option value="ContractManufacturer">Contract Manufacturer</option><br />
-                        <option value="Cosmetics">Cosmetics</option><br />
-                        <option value="Electronics">Electronics</option><br />
-                        <option value="Engineering">Engineering</option><br />
-                        <option value="Food">Food</option><br />
-                        <option value="Foundries">Foundries</option><br />
-                        <option value="GamingTechnology">Gaming Technology</option><br />
-                        <option value="ITServices">IT Services</option><br />
-                        <option value="MedicalDevices">Medical Devices</option><br />
-                        <option value="Mining">Mining</option><br />
-                        <option value="OilGas">Oil &#038; Gas</option><br />
-                        <option value="OtherManufacturing">Other Manufacturing</option><br />
-                        <option value="Pharmaceuticals">Pharmaceuticals</option><br />
-                        <option value="PlasticInjectionMolding">Plastic Injection Molding</option><br />
-                        <option value="Robotics">Robotics</option><br />
-                        <option value="SemiConductor">Semi-Conductor</option><br />
-                        <option value="SoftwareDeveloper">Software Developer</option><br />
-                        <option value="StructuralEngineering">Structural Engineering</option><br />
-                        <option value="Telecommunications">Telecommunications</option><br />
-                        <option value="Utilities">Utilities</option><br />
-                        <option value="WasteManagement">Waste Management</option><br />
-                        <option value="Winemaking">Winemaking</option><br />
-                        <option value="Other">Other</option><br />
-                      </select><br/>
-                      <span style='color:red; font-size:15px; display:none;' id='industryerror'></span>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th style="text-align:right!important">Employee Count: </th>
-                    <th><input type="number" ng-model="a"></th>
-                  </tr>
-                  <tr>
-                    <th style="text-align:right!important">Annual Wage/Payroll Size: </th>
-                    <th><input type="number" ng-model="b"></th>
-                  </tr>
-                  <tr>
-                    <th style="text-align:right!important">Annual Revenue: </th>
-                    <th><input type="number" ng-model="c"></th>
-                  </tr>
-                  <tr>
-                    <th>&nbsp;</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                  <tr>
-                    <th style="text-align:right!important">Estimated Savings: </th>
-                    <th style="font-size:20px!important;color=red">{{ result() }}</th>
-                  </tr>
-                </table>
-              </div>
+              <table style="width:100%">
+                <tr>
+                  <th style="text-align:right!important">Industry
+                  </th>
+                  <th>
+                    <select name="industry" id="industry"><br />
+                      <option value="none">Select One</option><br />
+                      <option value="Aerospace">Aerospace</option><br />
+                      <option value="Agricultural">Agricultural</option><br />
+                      <option value="Apparel">Apparel</option><br />
+                      <option value="Architecture">Architecture</option><br />
+                      <option value="ArmsandDefense">Arms and Defense</option><br />
+                      <option value="Automotive">Automotive</option><br />
+                      <option value="BiotechnologyLifeScience">Biotechnology / Life Science</option><br />
+                      <option value="Brewing">Brewing</option><br />
+                      <option value="Chemicals">Chemicals</option><br />
+                      <option value="Construction">Construction</option><br />
+                      <option value="ConsumerProducts">Consumer Products</option><br />
+                      <option value="ContractManufacturer">Contract Manufacturer</option><br />
+                      <option value="Cosmetics">Cosmetics</option><br />
+                      <option value="Electronics">Electronics</option><br />
+                      <option value="Engineering">Engineering</option><br />
+                      <option value="Food">Food</option><br />
+                      <option value="Foundries">Foundries</option><br />
+                      <option value="GamingTechnology">Gaming Technology</option><br />
+                      <option value="ITServices">IT Services</option><br />
+                      <option value="MedicalDevices">Medical Devices</option><br />
+                      <option value="Mining">Mining</option><br />
+                      <option value="OilGas">Oil &#038; Gas</option><br />
+                      <option value="OtherManufacturing">Other Manufacturing</option><br />
+                      <option value="Pharmaceuticals">Pharmaceuticals</option><br />
+                      <option value="PlasticInjectionMolding">Plastic Injection Molding</option><br />
+                      <option value="Robotics">Robotics</option><br />
+                      <option value="SemiConductor">Semi-Conductor</option><br />
+                      <option value="SoftwareDeveloper">Software Developer</option><br />
+                      <option value="StructuralEngineering">Structural Engineering</option><br />
+                      <option value="Telecommunications">Telecommunications</option><br />
+                      <option value="Utilities">Utilities</option><br />
+                      <option value="WasteManagement">Waste Management</option><br />
+                      <option value="Winemaking">Winemaking</option><br />
+                      <option value="Other">Other</option><br />
+                    </select><br/>
+                    <span style='color:red; font-size:15px; display:none;' id='industryerror'></span>
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align:right!important">Employee Count: </th>
+                  <th><input type="number" ng-model="a"></th>
+                </tr>
+                <tr>
+                  <th style="text-align:right!important">Annual Wage/Payroll Size: </th>
+                  <th><input type="number" ng-model="b"></th>
+                </tr>
+                <tr>
+                  <th style="text-align:right!important">Annual Revenue: </th>
+                  <th><input type="number" ng-model="c"></th>
+                </tr>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                </tr>
+                <tr>
+                  <th style="text-align:right!important">Estimated Savings: </th>
+                  <th style="font-size:20px!important;color=red">{{ result() }}</th>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
       </div>
-      <br>
-      <h5 style="text-align:center" class="section-subheading text-muted">Disclaimer: The estimate provided above is meant only to give you an idea of savings, actual savings may vary depending on the activities your company performs. Please contact our representative to better assess your situation and provide a more detailed estimate for you.</h5>
     </div>
-  </section>
-  <section class="bg-primary" id="faq">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center hideme">
-          <h2 class="section-heading">Faq</h2>
-          <hr>
-          <p class="">Do I need these credits if I plan to sell my business?</p>
-          <p class="text-muted">Because the credits can be claimed in one year and taken in another year, they can be transferred to new ownership. The credits also legitimize a company’s technology. A lot of small companies claim the credit every year because they are looking to be acquired by a larger corporation, and if they have R&D credits on their books it proves they have technology someone else is likely to value.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-secondary" id="news">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center hideme">
-          <h2 class="section-heading">NEWS & LINKS</h2>
-          <hr>
-          <p style="text-align:left">Useful Research and Development Information</p>
-          <p style="text-align:left">The following links contain information that you may find useful in regards to the Research and Development tax credit.
-          </p>
-          <p style="text-align:left">
-            > Investing in U.S. Competitiveness: The Benefits of Enhancing the Research and Experimentation (R&E) Tax Credit
-          </p>
-          <p style="text-align:left">
-            > The Research Tax Credit’s Design and Administration Can be Improved
-          </p>
-          <p style="text-align:left">
-            > California Franchise Tax Board Research and Development Guidance
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- <section id="contact">
+    <br>
+    <h5 style="text-align:center" class="section-subheading text-muted">Disclaimer: The estimate provided above is meant only to give you an idea of savings, actual savings may vary depending on the activities your company performs. Please contact our representative to better assess your situation and provide a more detailed estimate for you.</h5>
+  </div>
+</section>
+<section class="bg-primary" id="faq">
   <div class="container">
-  <div class="row">
-  <div class="col-lg-8 col-lg-offset-2 text-center hideme">
-  <h2 class="section-heading">Let's Get In Touch!</h2>
-  <hr class="primary">
-  <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center hideme">
+        <h2 class="section-heading">Faq</h2>
+        <hr>
+        <p class="">Do I need these credits if I plan to sell my business?</p>
+        <p class="text-muted">Because the credits can be claimed in one year and taken in another year, they can be transferred to new ownership. The credits also legitimize a company’s technology. A lot of small companies claim the credit every year because they are looking to be acquired by a larger corporation, and if they have R&D credits on their books it proves they have technology someone else is likely to value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-secondary" id="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center hideme">
+        <h2 class="section-heading">NEWS & LINKS</h2>
+        <hr>
+        <p style="text-align:left">Useful Research and Development Information</p>
+        <p style="text-align:left">The following links contain information that you may find useful in regards to the Research and Development tax credit.
+        </p>
+        <p style="text-align:left">
+          > Investing in U.S. Competitiveness: The Benefits of Enhancing the Research and Experimentation (R&E) Tax Credit
+        </p>
+        <p style="text-align:left">
+          > The Research Tax Credit’s Design and Administration Can be Improved
+        </p>
+        <p style="text-align:left">
+          > California Franchise Tax Board Research and Development Guidance
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section id="contact">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 text-center hideme">
+<h2 class="section-heading">Let's Get In Touch!</h2>
+<hr class="primary">
+<p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
 </div>
 <div class="col-lg-4 col-lg-offset-2 text-center">
 <i class="fa fa-phone fa-3x wow bounceIn"></i>
@@ -759,7 +764,7 @@
 
   </section>
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="  http://www.minddust.com/res/minddust.min.js"></script>
 
   <!-- font awesome -->
@@ -773,8 +778,6 @@
   <script src= "js/progress.js"></script>
   <script src= "js/carousel.js"></script>
 
-  <!-- Bootstrap Progress -->
-  <script src="https://cdn.jsdelivr.net/bootstrap.progressbar/0.7.1/bootstrap-progressbar.js"></script>
 
   <!-- Contact Form Javascript -->
   <script src="js/jqBootstrapValidation.js"></script>
