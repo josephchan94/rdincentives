@@ -5,11 +5,10 @@ $(document).ready(function() {
     interval: 4000,
   });
 });
-$('#quote-carousel').on('slide.bs.carousel', function (event) {
+$('#quote-carousel').on('slide.bs.carousel', function(event) {
   var curr = parseInt($('.progress-bar').attr('aria-valuenow'));
-
   console.log(typeof curr);
-  if(event.direction == "right") {
+  if (event.direction == "right") {
     $('.progress-bar').attr('aria-valuenow', curr - 1);
   } else {
     console.log(curr);
