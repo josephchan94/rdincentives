@@ -1,6 +1,6 @@
 /*
 Calculator written by Joseph Chan December 2015
- */
+*/
 
 // gives industries values for the selector
 var industryValue= new Array();
@@ -72,14 +72,7 @@ function calculateTotal()
 {
   // given estimator formula
   var industrySavings = [getWages() * getIndustryPrice()] * 0.13;
-  //display the result
+  //display the result in totalPrice
   var divobj= document.getElementById('totalPrice');
   divobj.innerHTML = industrySavings;
-}
-
-//hides the result until input
-function hideTotal()
-{
-  var divobj = document.getElementById('totalPrice');
-  divobj.style.display='none';
 }
