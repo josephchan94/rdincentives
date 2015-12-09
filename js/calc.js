@@ -1,4 +1,8 @@
-// gives industries values
+/*
+Calculator written by Joseph Chan December 2015
+ */
+
+// gives industries values for the selector
 var industryValue= new Array();
 industryValue["Aerospace"]=	0.1865;
 industryValue["Agricultural"]=	0.0813;
@@ -34,6 +38,7 @@ industryValue["Utilities"]=	0.1350;
 industryValue["Waste Management"]=	0.0725;
 industryValue["Winemaking"]=	0.1224;
 
+//gets the industry price from the form
 function getIndustryPrice()
 {
   // defaults industryPrice at 0
@@ -48,6 +53,7 @@ function getIndustryPrice()
   return industryPrice;
 }
 
+//gets the inputted value for annual wage/payroll size
 function getWages() {
   /* finds out whether the browser uses textContent (Webkit, Opera, Mozilla...)
   or innerText (Microsoft) to set the text of an element/node */
@@ -64,6 +70,7 @@ function getWages() {
 // calculates the total result
 function calculateTotal()
 {
+  // given estimator formula
   var industrySavings = [getWages() * getIndustryPrice()] * 0.13;
   //display the result
   var divobj= document.getElementById('totalPrice');
