@@ -2,7 +2,7 @@ $(document).ready(function() {
   //Set the carousel options
   $('#quote-carousel').carousel({
     pause: true,
-    interval: 6000,
+    interval: 8000,
   });
 });
 $('#quote-carousel').on('slide.bs.carousel', function (event) {
