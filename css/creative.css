@@ -524,9 +524,9 @@ section#contact .form-control:focus {
 .qualifiesbtn:hover {
   color:#fff;
 }
-
+/* Header for qualifies*/
 .qualifies h3, h4 {
-  font-size: 20px;
+  font-size: 1.5em;
   margin-bottom:3px;
   line-height:1.5;
   text-transform: uppercase;
@@ -534,11 +534,16 @@ section#contact .form-control:focus {
 
 }
 
-.qualifies h5 {
-  font-size: 16px;
+.qualifies h5,li {
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-size: 1em;
   margin-bottom:3px;
   line-height:1.5;
   color:black;
+}
+
+.qualifies li {
+  color:#0083C5;
 }
 
 .qualifies p {
