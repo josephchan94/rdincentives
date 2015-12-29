@@ -576,7 +576,7 @@ section#contact .form-control:focus {
 .approach p {
   color: rgba(255,255,255,.7);
   text-align: left;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 td {
@@ -624,7 +624,6 @@ span {
 #quote-carousel
 {
   padding: 0 10px 30px 10px;
-  margin-top: 30px;
 }
 
 /* Control buttons  */
@@ -650,7 +649,7 @@ span {
 #quote-carousel .carousel-indicators
 {
   right: 50%;
-  top: auto;
+  top: 280px;
   bottom: 0px;
   margin-right: -19px;
 }
