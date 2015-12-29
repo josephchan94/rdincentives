@@ -534,11 +534,6 @@ section#contact .form-control:focus {
 
 }
 
-.qualifiespop h4 {
-  font-size: 18px;
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
-}
-
 .qualifies h5 {
   font-size: 16px;
   margin-bottom:3px;
@@ -553,6 +548,13 @@ section#contact .form-control:focus {
 
 .qualifiespop p {
   margin-top: 0;
+  font-size: .9em;
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
+}
+
+.qualifiespop h4 {
+  font-size: 1.1em;
+  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
 }
 
 .qualifies img{
@@ -567,14 +569,14 @@ section#contact .form-control:focus {
 
 .approach h3 {
   text-align: left;
-  font-size: 1.2em!important;
+  font-size: .9em!important;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 .approach p {
   color: rgba(255,255,255,.7);
   text-align: left;
-  font-size: 1em;
+  font-size: .7em;
 }
 
 td {
