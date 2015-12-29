@@ -716,7 +716,8 @@ MEDIA QUERIES
   color: cornflowerblue;
 }
 .helpful-links:hover {
+  font-size: 16px;
   text-align: left;
   text-decoration: none;
-  color: grey;
+  color: cornflowerblue;
 }
