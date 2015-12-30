@@ -579,84 +579,47 @@
                                 <!-- <p class="text-primary"></p> -->
                                 <div class="col-lg-8 col-lg-offset-2 text-center hideme">
                                   <div class="row">
-                                    <form id="industryCalc">
+                                    <form id="industryCalc" role="form">
                                       <table style="width:100%">
                                         <tr>
                                           <th style="text-align:right!important">Industry
                                           </th>
                                           <th>
-                                            <select name="industry" id="industry">
-                                              <br/>
-                                              <option value="none">Select One</option>
-                                              <br />
+                                            <select id="industry" required>
+                                              <option value="">Select One</option>
                                               <option value="Aerospace">Aerospace</option>
-                                              <br />
                                               <option value="Agricultural">Agricultural</option>
-                                              <br />
                                               <option value="Apparel">Apparel</option>
-                                              <br />
                                               <option value="Architecture">Architecture</option>
-                                              <br />
                                               <option value="ArmsandDefense">Arms and Defense</option>
-                                              <br />
                                               <option value="Automotive">Automotive</option>
-                                              <br />
                                               <option value="BiotechnologyLifeScience">Biotechnology / Life Science</option>
-                                              <br />
                                               <option value="Brewing">Brewing</option>
-                                              <br />
                                               <option value="Chemicals">Chemicals</option>
-                                              <br />
                                               <option value="Construction">Construction</option>
-                                              <br />
                                               <option value="ConsumerProducts">Consumer Products</option>
-                                              <br />
                                               <option value="ContractManufacturer">Contract Manufacturer</option>
-                                              <br />
                                               <option value="Cosmetics">Cosmetics</option>
-                                              <br />
                                               <option value="Electronics">Electronics</option>
-                                              <br />
                                               <option value="Engineering">Engineering</option>
-                                              <br />
                                               <option value="Food">Food</option>
-                                              <br />
                                               <option value="Foundries">Foundries</option>
-                                              <br />
                                               <option value="GamingTechnology">Gaming Technology</option>
-                                              <br />
                                               <option value="ITServices">IT Services</option>
-                                              <br />
                                               <option value="MedicalDevices">Medical Devices</option>
-                                              <br />
                                               <option value="Mining">Mining</option>
-                                              <br />
-                                              <option value="OilGas">Oil &#038; Gas</option>
-                                              <br />
+                                              <option value="OilGas">Oil &amp; Gas</option>
                                               <option value="OtherManufacturing">Other Manufacturing</option>
-                                              <br />
                                               <option value="Pharmaceuticals">Pharmaceuticals</option>
-                                              <br />
                                               <option value="PlasticInjectionMolding">Plastic Injection Molding</option>
-                                              <br />
                                               <option value="Robotics">Robotics</option>
-                                              <br />
                                               <option value="SemiConductor">Semi-Conductor</option>
-                                              <br />
                                               <option value="SoftwareDeveloper">Software Developer</option>
-                                              <br />
                                               <option value="StructuralEngineering">Structural Engineering</option>
-                                              <br />
                                               <option value="Telecommunications">Telecommunications</option>
-                                              <br />
                                               <option value="Utilities">Utilities</option>
-                                              <br />
                                               <option value="WasteManagement">Waste Management</option>
-                                              <br />
                                               <option value="Winemaking">Winemaking</option>
-                                              <br />
-                                              <option value="Other">Other</option>
-                                              <br />
                                             </select>
                                             <br/>
                                             <span style='color:red; font-size:15px; display:none;' id='industryerror'></span>
@@ -665,19 +628,19 @@
                                         <tr>
                                           <th style="text-align:right!important">Employee Count: </th>
                                           <th>
-                                            <input type="text">
+                                            <input type="number" required>
                                           </th>
                                         </tr>
                                         <tr>
                                           <th style="text-align:right!important">Annual Wage/Payroll Size: </th>
                                           <th>
-                                            <input type="text" id="wages">
+                                            <input type="number" id="wages" required>
                                           </th>
                                         </tr>
                                         <tr>
                                           <th style="text-align:right!important">Annual Revenue: </th>
                                           <th>
-                                            <input type="number">
+                                            <input type="number" required>
                                           </th>
                                         </tr>
                                         <tr>
@@ -691,7 +654,7 @@
                                         <tr>
                                           <th>&nbsp;</th>
                                           <th>
-                                            <button type="button" class="btn btn-info btn-sm" onclick="calculateTotal()">Calculate</button>
+                                            <button type="submit" class="btn btn-info btn-sm">Calculate</button>
                                           </th>
                                         </tr>
                                       </table>
@@ -873,7 +836,7 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" id="contactForm" role="form" novalidate>
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
@@ -915,7 +878,7 @@
                   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
                   <!-- AngularJS -->
-                  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+                  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
                   <!-- CustomJS -->
                   <script src="js/calc.js"></script>
                   <script src="js/fade.js"></script>
