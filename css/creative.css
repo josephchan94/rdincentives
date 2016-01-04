@@ -75,6 +75,11 @@ aside {
   padding: 0;
 }
 
+.navbar-brand {
+  height: auto;
+  padding: 8px 15px;
+}
+
 .navbar-default {
   border-color: rgba(34,34,34,.05);
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -167,7 +172,7 @@ aside {
 
   .navbar-default.affix .nav > li>a:hover,
   .navbar-default.affix .nav>li>a:focus:hover {
-    color: #2B3033;
+    color: #337AB7;
   }
 }
 
@@ -353,7 +358,7 @@ header .header-content .header-content-inner p {
 
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default
+.open > .dropdown-toggle.btn-default {
   background-image: none;
 }
 
@@ -475,13 +480,10 @@ body {
   webkit-tap-highlight-color: #222;
 }
 
-modal-body {
-  h4 {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
-  }
+.modal-body h4 {
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
-<<<<<<< HEAD
 section#contact .form-group {
   margin-bottom: 25px;
 }
@@ -542,7 +544,6 @@ section#contact .form-control:focus {
 }
 
 .qualifies li {
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
   color:#0083C5;
 }
 
@@ -554,12 +555,10 @@ section#contact .form-control:focus {
 .qualifiespop p {
   margin-top: 0;
   font-size: .9em;
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
 }
 
 .qualifiespop h4 {
   font-size: 1.1em;
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif!important;
 }
 
 .qualifies img{
