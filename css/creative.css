@@ -596,13 +596,13 @@ section#contact .form-control:focus {
 }
 
 .ourapproach h1 {
-  font-size:18px!important;
+  font-size:16px!important;
   text-align:center;
   font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 .ourapproach p {
-  font-size:14px;
+  font-size:12px;
   text-align:center;
   color:rgba(255,255,255,.7);
 }
@@ -650,7 +650,7 @@ span {
 
 #faq {
   height: auto;
-  min-height: 530px;
+  min-height: 500px;
 }
 
 /* carousel */
