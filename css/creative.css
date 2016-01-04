@@ -28,12 +28,7 @@ hr.light {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
@@ -60,7 +55,7 @@ p {
 
 .text-faded {
   color: rgba(255,255,255,.7);
-  font-size: 1em;
+  font-size: 16px;
 }
 
 section {
@@ -78,6 +73,10 @@ aside {
 .navbar-brand {
   height: auto;
   padding: 8px 15px;
+}
+
+.navbar-brand>img {
+  display: inline;
 }
 
 .navbar-default {
@@ -202,6 +201,8 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 65px;
+  text-shadow: rgb(128, 128, 128) 3px 3px 3px;
 }
 
 header .header-content .header-content-inner hr {
@@ -213,6 +214,7 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   font-weight: 300;
   color: rgba(255,255,255);
+  text-shadow: 1px 1px black;
 }
 
 @media(min-width:768px) {
@@ -246,6 +248,10 @@ header .header-content .header-content-inner p {
 .section-heading {
   margin-top: 0;
   text-transform: uppercase;
+}
+
+.section-subheading {
+  font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 .service-box {
@@ -538,13 +544,17 @@ section#contact .form-control:focus {
 
 .qualifies h5 {
   font-size: 1em;
-  margin-bottom:3px;
-  line-height:1.5;
-  color:black;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+#doiqualify ul {
+  list-style-type: none;
 }
 
 .qualifies li {
-  color:#0083C5;
+  color: #0083C5;
 }
 
 .qualifies p {
@@ -718,6 +728,8 @@ MEDIA QUERIES
   }
 }
 .helpful-links {
+  display: block;
+  margin: 1em;
   text-align: left;
   text-decoration: none;
   color: cornflowerblue;
