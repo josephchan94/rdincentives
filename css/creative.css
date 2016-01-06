@@ -252,6 +252,8 @@ header .header-content .header-content-inner p {
 
 .section-subheading {
   font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-size:14px;
+  text-align:center;
 }
 
 .service-box {
@@ -579,21 +581,33 @@ section#contact .form-control:focus {
   border: 7px solid #CACACA;
 }
 
-.approach h1 {
+.faq h1 {
   text-align: left;
   font-size: 1.4em!important;
 }
 
-.approach h3 {
-  text-align: left;
+.faq h3 {
+  text-align: center;
   font-size: .9em!important;
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
-.approach p {
+.faq p {
   color: rgba(255,255,255,.7);
   text-align: left;
   font-size: .8em;
+}
+
+.ourapproach h1 {
+  font-size:16px!important;
+  text-align:center;
+  font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+.ourapproach p {
+  font-size:12px;
+  text-align:center;
+  color:rgba(255,255,255,.7);
 }
 
 td {
@@ -639,7 +653,7 @@ span {
 
 #faq {
   height: auto;
-  min-height: 530px;
+  min-height: 500px;
 }
 
 /* carousel */
