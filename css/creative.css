@@ -714,6 +714,11 @@ span {
   margin-bottom: 10px;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 
 /**
 MEDIA QUERIES
