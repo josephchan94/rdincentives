@@ -517,6 +517,9 @@ section#contact .form-control:focus {
   padding:20px;
 }
 
+.qualifies a {
+  cursor: pointer;
+}
 
 .qualifies h2 {
   font-weight: 700;
