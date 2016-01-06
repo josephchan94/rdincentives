@@ -1,3 +1,5 @@
+/* Fades for page scrolling */
+
 $(document).ready(function() {
 
     /* Every time the window is scrolled ... */
