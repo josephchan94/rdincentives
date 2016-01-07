@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -251,7 +251,7 @@ header .header-content .header-content-inner p {
 }
 
 .section-subheading {
-  font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-size:14px;
   text-align:center;
 }
@@ -489,7 +489,7 @@ body {
 }
 
 .modal-body h4 {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 section#contact .form-group {
@@ -589,7 +589,7 @@ section#contact .form-control:focus {
 .faq h3 {
   text-align: center;
   font-size: .9em!important;
-  font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .faq p {
@@ -601,7 +601,7 @@ section#contact .form-control:focus {
 .ourapproach h1 {
   font-size:16px!important;
   text-align:center;
-  font-family:Merriweather,'Helvetica Neue',Arial,sans-serif;
+  font-family:'Open Sans', sans-serif;
 }
 
 .ourapproach p {
@@ -713,6 +713,11 @@ span {
 .item blockquote img {
   margin-bottom: 10px;
 }
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 
 /**
