@@ -612,7 +612,7 @@ section#contact .form-control:focus {
 
 .ourapproach div:not(.clearfix) {
   padding:5px 20px 5px 20px;
-  height:270px;
+  min-height: 300px;
 }
 
 td {
