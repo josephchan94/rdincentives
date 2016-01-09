@@ -562,134 +562,109 @@
 
   <section class="bg-secondary" id="calc">
     <div class="container">
+
       <div class="row text-center hideme">
         <h2 class="section-heading">Calculate Your Savings!</h2>
         <h3 class="section-subheading">Use our Calculator to get an idea of the amount of credit you can earn!</h3>
-
         <hr>
-        <br>
-        <!-- <p class="text-primary"></p> -->
-        <div class="row text-center hideme">
-          <form id="industryCalc" role="form">
-            <table style="width:100%">
-              <tr>
-                <div class="form-group row col-lg-4">
-                  <th style="text-align:right!important">Industry:</th>
-                  <th>
-                    <select style="width:50%" class="form-control" id="industry" required>
-                      <option value="">Select One</option>
-                      <option value="Aerospace">Aerospace</option>
-                      <option value="Agricultural">Agricultural</option>
-                      <option value="Apparel">Apparel</option>
-                      <option value="Architecture">Architecture</option>
-                      <option value="ArmsandDefense">Arms and Defense</option>
-                      <option value="Automotive">Automotive</option>
-                      <option value="BiotechnologyLifeScience">Biotechnology / Life Science</option>
-                      <option value="Brewing">Brewing</option>
-                      <option value="Chemicals">Chemicals</option>
-                      <option value="Construction">Construction</option>
-                      <option value="ConsumerProducts">Consumer Products</option>
-                      <option value="ContractManufacturer">Contract Manufacturer</option>
-                      <option value="Cosmetics">Cosmetics</option>
-                      <option value="Electronics">Electronics</option>
-                      <option value="Engineering">Engineering</option>
-                      <option value="Food">Food</option>
-                      <option value="Foundries">Foundries</option>
-                      <option value="GamingTechnology">Gaming Technology</option>
-                      <option value="ITServices">IT Services</option>
-                      <option value="MedicalDevices">Medical Devices</option>
-                      <option value="Mining">Mining</option>
-                      <option value="OilGas">Oil &amp; Gas</option>
-                      <option value="OtherManufacturing">Other Manufacturing</option>
-                      <option value="Pharmaceuticals">Pharmaceuticals</option>
-                      <option value="PlasticInjectionMolding">Plastic Injection Molding</option>
-                      <option value="Robotics">Robotics</option>
-                      <option value="SemiConductor">Semi-Conductor</option>
-                      <option value="SoftwareDeveloper">Software Developer</option>
-                      <option value="StructuralEngineering">Structural Engineering</option>
-                      <option value="Telecommunications">Telecommunications</option>
-                      <option value="Utilities">Utilities</option>
-                      <option value="WasteManagement">Waste Management</option>
-                      <option value="Winemaking">Winemaking</option>
-                    </select>
-                  </th>
-                </div>
-                <span style='color:red; font-size:15px; display:none;' id='industryerror'></span>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important;width:50%;" >Employee Count: </th>
-                <th>
-                  <input type="number" class="form-control" style="width:50%" required>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Annual Wage/Payroll Size: </th>
-                <th>
-                  <input type="number" id="wages" class="form-control" style="width:50%" required>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Annual Revenue: </th>
-                <th>
-                  <input type="number" class="form-control" style="width:50%" required>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Do you have any engineers/scientist?</th>
-                <th>
-                  <select style="width:50%" class="form-control" id="industry" required>
-                    <option value="">Select One</option>
-                    <option value="">Yes</option>
-                    <option value="Aerospace">No</option>
-                  </select>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Does your company hold any patents?</th>
-                <th>
-                  <select style="width:50%" class="form-control" id="industry" required>
-                    <option value="">Select One</option>
-                    <option value="">Yes</option>
-                    <option value="Aerospace">No</option>
-                  </select>
-                </th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Are you currently claiming R&amp;D Tax Credit?</th>
-                <th>
-                  <select style="width:50%" class="form-control" id="industry" required>
-                    <option value="">Select One</option>
-                    <option value="">Yes</option>
-                    <option value="Aerospace">No</option>
-                  </select>
-                </th>
-              </tr>
-              <tr>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-              </tr>
-              <tr>
-                <th style="text-align:right!important">Estimated Credits: </th>
-                <th style="font-size:20px!important;color=red" id="totalPrice"></th>
-              </tr>
-              <tr>
-                <th>&nbsp;</th>
-                <th>
-                  <button type="submit" class="btn btn-info btn-sm">Calculate</button>
-                </th>
-              </tr>
-            </table>
-          </form>
-          <br>
-
-          <a href="#contact" class="btn btn-primary btn-xl page-scroll">Get Incentives Now</a>
-        </div>
       </div>
-      <br>
 
-      <h5 style="text-align:center; margin-left:200px; margin-right:200px" class="section-subheading text-muted">Disclaimer: The estimate provided above is meant only to give you an idea of savings, actual savings may vary depending on the activities your company performs. Please contact our representative to better assess your situation and provide a more
-        detailed estimate for you.</h5>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="control-label col-xs-12 col-sm-6 col-md-5">Industry:</label>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <select class="form-control" id="industry" required>
+              <option value=""></option>
+              <option value="Aerospace">Aerospace</option>
+              <option value="Agricultural">Agricultural</option>
+              <option value="Apparel">Apparel</option>
+              <option value="Architecture">Architecture</option>
+              <option value="ArmsandDefense">Arms and Defense</option>
+              <option value="Automotive">Automotive</option>
+              <option value="BiotechnologyLifeScience">Biotechnology / Life Science</option>
+              <option value="Brewing">Brewing</option>
+              <option value="Chemicals">Chemicals</option>
+              <option value="Construction">Construction</option>
+              <option value="ConsumerProducts">Consumer Products</option>
+              <option value="ContractManufacturer">Contract Manufacturer</option>
+              <option value="Cosmetics">Cosmetics</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Food">Food</option>
+              <option value="Foundries">Foundries</option>
+              <option value="GamingTechnology">Gaming Technology</option>
+              <option value="ITServices">IT Services</option>
+              <option value="MedicalDevices">Medical Devices</option>
+              <option value="Mining">Mining</option>
+              <option value="OilGas">Oil &amp; Gas</option>
+              <option value="OtherManufacturing">Other Manufacturing</option>
+              <option value="Pharmaceuticals">Pharmaceuticals</option>
+              <option value="PlasticInjectionMolding">Plastic Injection Molding</option>
+              <option value="Robotics">Robotics</option>
+              <option value="SemiConductor">Semi-Conductor</option>
+              <option value="SoftwareDeveloper">Software Developer</option>
+              <option value="StructuralEngineering">Structural Engineering</option>
+              <option value="Telecommunications">Telecommunications</option>
+              <option value="Utilities">Utilities</option>
+              <option value="WasteManagement">Waste Management</option>
+              <option value="Winemaking">Winemaking</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Employee Count:</label>
+          <div class="col-sm-6 col-md-4">
+            <input type="number" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Annual Wage/Payroll Size:</label>
+          <div class="col-sm-6 col-md-4">
+            <input type="number" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Do you have any scientists or engineers?</label>
+          <div class="col-sm-6 col-md-4">
+            <label class="radio-inline"><input name="calc-engineers" type="radio" checked> No</label>
+            <label class="radio-inline"><input name="calc-engineers" type="radio"> Yes</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Does your company hold any patents?</label>
+          <div class="col-sm-6 col-md-4">
+            <label class="radio-inline"><input name="calc-patents" type="radio" checked> No</label>
+            <label class="radio-inline"><input name="calc-patents" type="radio"> Yes</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Are you currently claiming R&amp;D Tax Credit?</label>
+          <div class="col-sm-6 col-md-4">
+            <label class="radio-inline"><input name="calc-credit" type="radio" checked> No</label>
+            <label class="radio-inline"><input name="calc-credit" type="radio"> Yes</label>
+          </div>
+        </div>
+
+        <tr>
+          <th style="text-align:right!important">Estimated Credits: </th>
+          <th style="font-size:20px!important;color=red" id="totalPrice"></th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th>
+            <button type="submit" class="btn btn-info btn-sm">Calculate</button>
+          </th>
+        </tr>
+      </form>
+
+      <div class="clearfix"></div>
+      <a href="#contact" class="btn btn-primary btn-xl page-scroll">Get Incentives Now</a>
+
+      <h5 class="section-subheading text-muted text-center col-md-8 col-md-offset-2">
+        Disclaimer: The estimate provided above is meant only to give you an idea of savings,
+        actual savings may vary depending on the activities your company performs. Please contact
+        our representative to better assess your situation and provide a more detailed estimate for you.
+      </h5>
     </div>
   </section>
 
