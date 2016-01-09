@@ -79,6 +79,10 @@ aside {
   display: inline;
 }
 
+.navbar-right {
+  margin-right: 0;
+}
+
 .navbar-default {
   border-color: rgba(34,34,34,.05);
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
