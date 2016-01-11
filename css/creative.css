@@ -79,10 +79,6 @@ aside {
   display: inline;
 }
 
-.navbar-right {
-  margin-right: 0;
-}
-
 .navbar-default {
   border-color: rgba(34,34,34,.05);
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -560,9 +556,6 @@ section#contact .form-control:focus {
 
 #doiqualify ul {
   list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  text-align: center;
 }
 
 .qualifies li {
