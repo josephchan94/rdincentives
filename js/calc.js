@@ -130,7 +130,6 @@
 
 
     //display the result in #total-price
-    console.log(formatPrice(industrySavings));
     $('#total-price').text(formatPrice(industrySavings));
     $('#estimated-credits').toggleClass('hidden');
 
