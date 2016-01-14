@@ -6,10 +6,10 @@
 */
 
 .container {
-     padding-right: 0; /*15px in bootstrap.css*/
-     padding-left: 0;  /*idem*/
-     margin-right: auto;
-     margin-left: auto;
+  padding-right: 0; /*15px in bootstrap.css*/
+  padding-left: 0;  /*idem*/
+  margin-right: auto;
+  margin-left: auto;
 }
 
 html {
@@ -496,7 +496,7 @@ body {
 }
 
 .modal-body h4 {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section#contact .form-group {
@@ -665,6 +665,32 @@ span {
   -webkit-transition: width 2s ease-in-out;
   transition: width 2s ease-in-out;
 }
+@media (min-width:1170px) {
+  #approach .col-lg-2 {
+    min-height:300px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1169px)  {
+  #approach .col-md-4 {
+    min-height:200px!important;
+  }
+}
+
+@media (min-width:769px) and (max-width:991px) {
+  #approach .col-sm-12 {
+    min-height:150px!important;
+  }
+
+}
+
+@media (max-width:768px) {
+  #approach .col-sm-12 {
+    min-height:150px!important;
+  }
+}
+
+
 
 #faq {
   height: auto;
