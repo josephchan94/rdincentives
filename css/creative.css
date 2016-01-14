@@ -73,6 +73,7 @@ aside {
   padding: 50px 0;
 }
 
+
 .no-padding {
   padding: 0;
 }
@@ -593,6 +594,10 @@ section#contact .form-control:focus {
 .qualifies img{
   margin: 0 auto;
   border: 7px solid #CACACA;
+}
+
+.faqQuote {
+  padding:0px 40px 0px 40px!important;
 }
 
 .faq h1 {
