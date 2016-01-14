@@ -556,6 +556,9 @@ section#contact .form-control:focus {
 
 #doiqualify ul {
   list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .qualifies li {
