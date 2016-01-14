@@ -723,6 +723,9 @@ span {
   text-align: right;
 }
 
+#total-price {
+  color: #ff3131;
+}
 
 /**
 MEDIA QUERIES
