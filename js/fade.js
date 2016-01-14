@@ -2,31 +2,24 @@
 
 $(document).ready(function() {
 
-  var scrollAmt = .7; // Fraction from top until object fades in
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
 
-  var win = $(window);
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
 
-  var animateFade = function() {
-    var hideme = $('.hideme');
-    if (hideme.length === 0) return;
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() /2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-    var fadePoint = win.scrollTop() + (win.height() * scrollAmt);
+            /* If the object is completely visible in the window, fade it */
+            if( bottom_of_window > bottom_of_object ){
 
-    /* Check the location of each desired element */
-    hideme.each(function(i){
+                $(this).animate({'opacity':'1'},500);
 
-      var elem = $(this);
-      var objTop = elem.offset().top;
+            }
 
-      /* If the object is scrollAmt from the top, fade it */
-      if (fadePoint > objTop){
-        elem.animate({'opacity':'1'}, 500);
-        elem.removeClass('hideme');
-      }
+        });
+
     });
-  };
-
-  /* Every time the window is scrolled ... */
-  win.scroll(animateFade);
 
 });
