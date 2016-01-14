@@ -40,6 +40,19 @@
     "Winemaking":	0.1224,
   };
 
+  $('form[name=calc] input').on('keypress', function(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    var regex = /[0-9]|\./;
+    if (theEvent.keyCode != 8){
+      if( !regex.test(key) ) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) theEvent.preventDefault();
+      }
+    }
+  });
+
   // calculates the total result
   $('#industryCalc').submit(function(event) {
     event.preventDefault();
@@ -61,6 +74,23 @@
 
     //display the result in totalPrice
     $('#totalPrice').text(formatPrice(industrySavings));
+    $('#estimated-credits').toggleClass('hidden');
   });
 
+  // Show/hide form items
+  $('#calc-eng-radio input').click(function() {
+    if ($('input[name=calc-eng]:checked').val() == 'yes') {
+      $('#calc-eng').removeClass('hidden');
+      $('input[name=calc-eng-2').prop('required', true);
+    } else {
+      $('#calc-eng').addClass('hidden');
+      $('input[name=calc-eng-2').prop('required', false);
+    }
+  });
+  $('#calc-credit-radio input').click(function() {
+    if ($('input[name=calc-credit]:checked').val() == 'yes')
+      $('#calc-credit-2').removeClass('hidden');
+    else
+      $('#calc-credit-2').addClass('hidden');
+  });
 })();

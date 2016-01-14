@@ -726,10 +726,9 @@ span {
   margin-bottom: 10px;
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
+#calc input[type=text] {
+  text-align: right;
 }
-
 
 
 /**

@@ -615,12 +615,12 @@
         <hr>
       </div>
 
-      <form class="form-horizontal" role="form">
+      <form class="form-horizontal" role="form" name="calc">
         <div class="form-group">
           <label class="control-label col-xs-12 col-sm-6 col-md-5">Industry:</label>
           <div class="col-xs-12 col-sm-6 col-md-4">
-            <select class="form-control" id="industry" required>
-              <option value=""></option>
+            <select class="form-control" id="industry" name="calc-industry" required>
+              <option value="">Select One</option>
               <option value="Aerospace">Aerospace</option>
               <option value="Agricultural">Agricultural</option>
               <option value="Apparel">Apparel</option>
@@ -660,59 +660,85 @@
         <div class="form-group">
           <label class="control-label col-sm-6 col-md-5">Employee Count:</label>
           <div class="col-sm-6 col-md-4">
-            <input type="number" class="form-control" required>
+            <input type="text" class="form-control" name="calc-employee" required>
           </div>
         </div>
         <div class="form-group">
           <label class="control-label col-sm-6 col-md-5">Annual Wage/Payroll Size:</label>
           <div class="col-sm-6 col-md-4">
-            <input type="number" class="form-control" required>
+            <div class="input-group">
+              <div class="input-group-addon"><b>$</b></div>
+              <input type="text" class="form-control" name="calc-wage" required>
+            </div>
           </div>
         </div>
         <div class="form-group">
-          <label class="control-label col-sm-6 col-md-5">Do you have any scientists or engineers?</label>
+          <label class="control-label col-sm-6 col-md-5">Annual Revenue:</label>
           <div class="col-sm-6 col-md-4">
-            <label class="radio-inline"><input name="calc-engineers" type="radio" checked> No</label>
-            <label class="radio-inline"><input name="calc-engineers" type="radio"> Yes</label>
+            <div class="input-group">
+              <div class="input-group-addon"><b>$</b></div>
+              <input type="text" class="form-control" name="calc-revenue" required>
+            </div>
           </div>
         </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Do you have any scientists or engineers?</label>
+          <div class="col-sm-6 col-md-4" id="calc-eng-radio">
+            <label class="radio-inline"><input name="calc-eng" type="radio" value="no" checked>No</label>
+            <label class="radio-inline"><input name="calc-eng" type="radio" value="yes">Yes</label>
+          </div>
+        </div>
+        <div class="form-group hidden" id="calc-eng">
+          <label class="control-label col-sm-6 col-md-5">How many scientists or engineers do you have?</label>
+          <div class="col-sm-6 col-md-4">
+            <input type="text" class="form-control" name="calc-eng-2">
+          </div>
+        </div>
+
         <div class="form-group">
           <label class="control-label col-sm-6 col-md-5">Does your company hold any patents?</label>
           <div class="col-sm-6 col-md-4">
-            <label class="radio-inline"><input name="calc-patents" type="radio" checked> No</label>
-            <label class="radio-inline"><input name="calc-patents" type="radio"> Yes</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="control-label col-sm-6 col-md-5">Are you currently claiming R&amp;D Tax Credit?</label>
-          <div class="col-sm-6 col-md-4">
-            <label class="radio-inline"><input name="calc-credit" type="radio" checked> No</label>
-            <label class="radio-inline"><input name="calc-credit" type="radio"> Yes</label>
+            <label class="radio-inline"><input name="calc-patents" type="radio" checked>No</label>
+            <label class="radio-inline"><input name="calc-patents" type="radio">Yes</label>
           </div>
         </div>
 
-        <tr>
-          <th style="text-align:right!important">Estimated Credits: </th>
+        <div class="form-group">
+          <label class="control-label col-sm-6 col-md-5">Are you currently claiming R&amp;D Tax Credit?</label>
+          <div class="col-sm-6 col-md-4" id="calc-credit-radio">
+            <label class="radio-inline"><input name="calc-credit" type="radio" value="no" checked>No</label>
+            <label class="radio-inline"><input name="calc-credit" type="radio" value="yes" >Yes</label>
+          </div>
+        </div>
+        <div class="form-group hidden" id="calc-credit-2">
+          <label class="control-label col-sm-6 col-md-5">Who are you working with?</label>
+          <div class="col-sm-6 col-md-4">
+            <label class="radio-inline"><input name="calc-credit-2" type="radio" checked>CPA</label>
+            <label class="radio-inline"><input name="calc-credit-2" type="radio">Consultant</label>
+            <label class="radio-inline"><input name="calc-credit-2" type="radio">In-House</label>
+          </div>
+        </div>
+
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-info btn-md" name="calculate">Calculate</button>
+        </div>
+        <div class="form-group hidden" id="estimated-credits">
+          <div class="control-label col-sm-6 col-md-5">Annual Estimated Credits: </div>
           <th style="font-size:20px!important;color=red" id="totalPrice"></th>
-        </tr>
-        <tr>
-          <th>&nbsp;</th>
-          <th>
-            <button type="submit" class="btn btn-info btn-sm">Calculate</button>
-          </th>
-        </tr>
+        </div>
       </form>
 
       <div class="clearfix"></div>
-      <a href="#contact" class="btn btn-primary btn-xl page-scroll">Get Incentives Now</a>
 
-      <h5 style="text-align:center;" class="col-lg-6 col-lg-offset-3 section-subheading text-muted">Disclaimer: The estimate provided above is meant only to give you an idea of savings, actual savings may vary depending on the activities your company performs. Please contact our representative to better assess your situation and provide a more
-        detailed estimate for you.</h5>
       <h5 class="section-subheading text-muted text-center col-md-8 col-md-offset-2">
-        Disclaimer: The estimate provided above is meant only to give you an idea of savings,
-        actual savings may vary depending on the activities your company performs. Please contact
-        our representative to better assess your situation and provide a more detailed estimate for you.
+        Disclaimer: The estimate provided above is meant only to give you an idea of savings, actual savings may vary depending on the activities
+        your company performs. Please contact our representative to better assess your situation and provide a more detailed estimate for you.
       </h5>
+
+      <div class="text-center">
+        <a href="#contact" class="btn btn-primary btn-xl page-scroll">Get Incentives Now</a>
+      </div>
     </div>
   </section>
 
