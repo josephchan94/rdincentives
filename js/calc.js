@@ -117,7 +117,7 @@
   $('form[name=calc]').submit(function(event) {
     event.preventDefault();
 
-    
+
     // validate form
     if ($('#calc .has-error').length > 0)
       return false;
@@ -135,8 +135,6 @@
 
     return false;
   });
-
-
 
 
   // Show/hide form items

@@ -77,6 +77,10 @@ aside {
   padding: 0;
 }
 
+.navbar-right {
+  margin-right:15px!important;
+}
+
 .navbar-brand {
   height: auto;
   padding: 8px 15px;
