@@ -257,6 +257,15 @@ header .header-content .header-content-inner p {
   }
 }
 
+.address1 p {
+  font-size: 18px!important;
+}
+
+.address1 br {
+  margin:0px;
+  line-height: 0px;
+}
+
 .section-heading {
   margin-top: 0;
   text-transform: uppercase;
@@ -264,7 +273,7 @@ header .header-content .header-content-inner p {
 
 .section-subheading {
   font-family:'Open Sans', sans-serif;
-  font-size:14px;
+  font-size:16px;
   text-align:center;
 }
 
@@ -510,7 +519,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
+  padding: 15px;
 }
 
 section#contact .form-group input.form-control {
@@ -624,7 +633,7 @@ section#contact .form-control:focus {
 }
 
 .ourapproach p {
-  font-size:12px;
+  font-size:16px;
   text-align:center;
   color:rgba(255,255,255,.7);
 }
@@ -676,26 +685,26 @@ span {
 }
 @media (min-width:1170px) {
   #approach .col-lg-2 {
-    min-height:300px;
+    min-height:440px;
   }
 }
 
 @media (min-width:992px) and (max-width:1169px)  {
   #approach .col-md-4 {
-    min-height:200px!important;
+    min-height:250px!important;
   }
 }
 
 @media (min-width:769px) and (max-width:991px) {
   #approach .col-sm-12 {
-    min-height:150px!important;
+    min-height:200px!important;
   }
 
 }
 
 @media (max-width:768px) {
   #approach .col-sm-12 {
-    min-height:150px!important;
+    min-height:200px!important;
   }
 }
 
